@@ -47,3 +47,11 @@ Agora entraremos no **Product-producer**
 
 Entre nos três servicos e execute:
 > npm run start:dev
+
+## Kafka para leigos
+
+Kafka é uma plataforma de processamento de dados em tempo real que permite a troca de informações entre diferentes sistemas de forma escalável e confiável. Nesse contexto, um "produtor" (producer) é uma aplicação ou sistema que envia informações para o Kafka, enquanto um "consumidor" (consumer) é uma aplicação ou sistema que recebe essas informações.
+
+Em termos simples, imagine que você está enviando uma mensagem de texto para um amigo. Nesse caso, você é o produtor da mensagem e seu amigo é o consumidor. Quando você envia a mensagem, ela é colocada em uma fila (ou tópico) no Kafka. O seu amigo, por sua vez, pode se inscrever nesse tópico e receber todas as mensagens que são enviadas para ele.
+
+Essa é a essência do Kafka: permite que diferentes sistemas e aplicativos se comuniquem entre si de forma assíncrona e distribuída. O Kafka é capaz de lidar com grandes volumes de dados em tempo real, garantindo que as informações sejam processadas e entregues de forma confiável e eficiente.
