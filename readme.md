@@ -12,3 +12,38 @@ Em outras palavras, o projeto busca garantir a consistência de dados entre dife
 
 ## **Arquitetura do Projeto**
 <img src="imagens/arquitetura.jpg">
+
+## Como Instalar o Projeto ?
+
+Para executar o projeto, é bem simples. :wink: 
+
+ - Basta ter o **node** instalado, de preferencia a versão **v19.6.0**
+ - Docker
+ 
+ ### Docker: 
+Para utilizar esta aplicação para que seja uma melhor experiência. utilize o docker para subir os serviços. 
+- Site para a instalação do **docker**  https://docs.docker.com/compose/
+
+Após realizar o download, execute dentro da pasta do projeto, onde tem o arquivo docker-compose.yml
+> docker-compose up
+
+### Instalando:
+
+Ao baixar o Projeto, você encontrará 2 pastas, uma api service que é um monolito e uma pasta com dois microsserviço.
+
+Primeiro entre no **monolito** chamado de **api-service**, 
+> npm i
+> npx prisma migrate dev
+
+Logo em Seguida entre nos outros microsserviços, **Product-producer** e **Product-consumer**, 
+Quando estiver no **Product-consumer**
+>  npm i
+>  npx prisma migrate dev
+
+Agora entraremos no **Product-producer**
+> npm i 
+
+## Como Executar o projeto
+
+Entre nos três servicos e execute:
+> npm run start:dev
