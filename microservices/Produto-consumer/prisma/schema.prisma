@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
+}
+
+datasource db {
+  provider = "postgresql"
+
+  url = "postgresql://postgres:docker@localhost:5433/micro_db2?schema=public"
+}
+
+model SalesItem {
+  id       Int    @id @default(autoincrement())
+  name     String
+  quantity Int
+  price    Float
+  code     String @unique
+}
